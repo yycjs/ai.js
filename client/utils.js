@@ -34,3 +34,7 @@ exports.normalize = function (data) {
 
   return data;
 };
+
+exports.classify = function() {
+
+}

@@ -1,8 +1,36 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
-    background-color: gray;
+}
+
+.wrapper {
+    height: 100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 canvas {
     background-color: white;
+    width: 100%;
+    flex: 1;
+}
+
+.button-container {
+    padding: 10px;
+    background-color: lightgray;
+    height: 60px;
+}
+
+button {
+    height: 100%;
 }
